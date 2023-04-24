@@ -1,66 +1,178 @@
 /*Global*/
 *{
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
-html{
-    height: 100%;  
-}
-/*Contenedores*/
 body{
+    font-family: Sans-serif, Georgia;
+}
+.wrapper,
+.portafolio,
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 1, 44);
+    color: white;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.brand{
+    margin-top: -10px;
+}
+.brand span{
+    color: rgb(0, 238, 255);
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    color: white;
+    text-decoration: none;
+    padding: 10px ;
+}
+.menu a:hover{
     color: black;
-    background-color: lightblue;
-    opacity: 80%;
-    min-height: 100%;
-    padding: 0;
-    margin: 0;
+    border-radius: 7px;
+    background-color: rgb(84, 3, 233);
+    transition: ease-in 0.3s;
 }
-/*pantalla movil*/
-.container{
-    
-    padding: 5%;
+.menu a span{
+    color: rgb(0, 238, 255);
+    text-decoration: none;
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
     display: grid;
-    gap: 10px;
-    grid-template:
-    "h" 90px
-    "n" 40px
-    "p" auto
-    "f" 70px
-    
-    ;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
-.header{
-    grid-area: h;
-    border: 5px solid black;
-    text-align: center;
-    padding: 0.5%;
+h1{
+    color: white;
 }
-.nav{
-    grid-area: n;
-    border: 5px solid blue;
-    position: relative;
+h1 span{
+    color: rgb(0, 238, 255);
+}
+.download{
+    padding: 10px 20px;
+    background-color: rgb(0, 238, 255);
+    border: none;
+    border-radius: 28px;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgb(0, 238, 255);
+}
+.download:hover{
+    background-color: rgb(84, 3, 233);
+    box-shadow: 10px 13px 21px -5px rgb(84, 3, 233);
+}
+.main img{
+    width: 250px;
+    height: 500px;
+    border: 7px solid rgb(0, 238, 255);  
+    z-index: 1;
+}
+.about{
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-around;
-    
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
 }
-.btn{
-    width: auto;
-    margin: 5%;
-    border: 5px solid white;
+.about img{
+    width: 100%;
+    grid-column: 1/5;
 }
-.page{
-    grid-area: p;
-    border: 5px solid red;
-    min-height: 350px;
+.about-info{
+    grid-column:5/10;
+    padding: 2em;
 }
-.footer{
-    grid-area: f;
-    border: 5px solid yellow;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-around;
+.about-info h2{
+    font-size: 2em;
+    color: rgb(4, 1, 44);
 }
+.divisor{
+    height: 4px;
+    width: 20%;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 1em;
+    transition: ease-in, 2s;
+}
+.divisor:hover{
+    height: 4px;
+    width: 90%;
+    background-color: aqua;
+    transition: ease-in, 2s;
 
-/*textos*/
+}
+.about p{
+    margin-bottom: 1em;
+}
+.portafolio-text{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em;
+}
+.portafolio-text h2{
+    font-size: 2.5em;
+}
+.portafolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card{
+    width: 300px;
+    background-color: rgb(6, 1, 71);
+    border-radius: 14px;
+    padding: 2em;
+}
+.card:hover{
+    height: 400px;
+    transition: ease-in 3s;
+}
+.card-img{
+    width: 100%;
+    height: 150px;
+    background-image: url(../images/ADRESS.png);
+    background-size: cover;
+    background-position: center;
+}
+.card-title{
+    padding: 20px;
+}
+.proyect-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.proyect-links button{
+    padding: 10px 20px;
+    background-color: rgb(0, 238, 255);
+    border: none;
+    border-radius: 56px;
+    box-shadow: 1px 3px 11px -5px rgb(0, 238, 255);
+    font-weight: 900;
+}
+.proyect-links button:hover{
+    padding: 20px 30px;
+    cursor: pointer;
+    transition: ease-in 2ms;
+}
+.contact-title{
+    font-size: 2em;
+}
