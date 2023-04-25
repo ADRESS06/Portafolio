@@ -59,6 +59,7 @@ body{
 }
 h1{
     color: white;
+    margin-bottom: 1%;
 }
 h1 span{
     color: rgb(0, 238, 255);
@@ -77,10 +78,13 @@ h1 span{
     box-shadow: 10px 13px 21px -5px rgb(84, 3, 233);
 }
 .main img{
-    width: 250px;
+    width: 350px;
     height: 500px;
-    border: 7px solid rgb(0, 238, 255);  
+    border: 7px solid rgb(8, 0, 117);  
     z-index: 1;
+}
+.perfil{
+    margin-left: 10%;
 }
 .about{
     display: grid;
@@ -175,4 +179,26 @@ h1 span{
 }
 .contact-title{
     font-size: 2em;
+}
+.container-contact{
+    display: flex;
+    margin: 0 2%;
+}
+.container-contact img{
+    margin: 0;
+    padding: 2%;
+    width: 350px;
+    height: 500px;
+    opacity: 35%;
+    border-radius: 100px;
+}
+.contact-option{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+    padding: 2%;
+    background-color: rgb(6, 1, 71);
+    border-radius: 14px;
+    width: 250px;
+
 }
