@@ -17,9 +17,12 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2em;
+    margin-bottom: 2%;
 }
 .brand{
     margin-top: -10px;
+    position: fixed;
+    z-index: 100;
 }
 .brand span{
     color: rgb(0, 238, 255);
@@ -28,6 +31,8 @@ body{
     display: flex;
     width: 50%;
     justify-content: space-around;
+    position: absolute;
+    right: 2%;
 }
 .menu li{
     list-style: none;
@@ -46,6 +51,9 @@ body{
 .menu a span{
     color: rgb(0, 238, 255);
     text-decoration: none;
+}
+.burger-menu img{
+    display: none;
 }
 .back{
     text-decoration: none;
@@ -68,9 +76,13 @@ body{
     grid-template-columns: repeat(2,1fr);
     align-items: center;
 }
+.desmo{
+    display: none;
+}
 h1{
     color: white;
     margin-bottom: 1%;
+    font-size: clamp(3vw, 1.5em, 3em);
 }
 h1 span{
     color: rgb(0, 238, 255);
@@ -138,7 +150,6 @@ h1 span{
 .portafolio,
 .contact{
     width: 100vw;
-    height: 100vh;
     background-color: rgb(4, 1, 44);
     color: white;
 }
@@ -154,18 +165,18 @@ h1 span{
 }
 .portafolio .container{
     width: 80vw;
-    height: 80vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .card{
     width: 300px;
     background-color: rgb(6, 1, 71);
     border-radius: 14px;
     padding: 2em;
-    margin: 5px;
+    margin: -1% 0 10% 0;
 }
 .card:hover{
     height: 400px;
@@ -205,6 +216,7 @@ h1 span{
 .container-contact{
     display: flex;
     margin: 0 2%;
+    flex-wrap: wrap;
 }
 .container-contact img{
     margin: 0;
@@ -256,4 +268,77 @@ h1 span{
 }
 .footer a:hover{
     border: solid 5px rgb(8, 0, 117);
+}
+
+/*version movil*/
+
+@media screen and (max-width: 800px){
+    .menu{
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background-color: rgb(6, 1, 71);
+        z-index: 1;
+        transform: translateX(-110%);
+        transition: all 1s ease-in-out;
+    }
+    .ver-menu{
+        transform: translateX(0%);
+        transition: all 1s ease-in-out;
+    }
+    .menu li{
+        margin: 1.5em;
+        overflow: auto;
+    }
+    .burger-menu img{
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        position: absolute;
+        right: 7%;
+    }
+    .mopen img{
+        width: 35px;
+    }
+    .mclose{
+        width: 35px;
+        display: none;
+    }
+    .mclose img{
+        width: 35px;
+    }
+    .main,.about{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .info-content p{
+        display: none;
+    }
+    .main img{
+        width: min(70%, 350px);
+        height: auto;
+        padding: 2%;
+        margin-bottom: 5%;
+    }
+    .perfil{
+        margin-left: 24%;
+    }
+    .desmo{
+        display: block;
+        margin-bottom: 2%;
+        text-align: center;
+    }
+    .download{
+        margin-left: 15%;
+    }
+    .contact-option{
+        width: 100vw;
+    }
+    .social-net{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
