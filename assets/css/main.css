@@ -7,9 +7,7 @@
 body{
     font-family: Sans-serif, Georgia;
 }
-.wrapper,
-.portafolio,
-.contact{
+.wrapper{
     width: 100vw;
     height: 100vh;
     background-color: rgb(4, 1, 44);
@@ -49,6 +47,19 @@ body{
     color: rgb(0, 238, 255);
     text-decoration: none;
 }
+.back{
+    text-decoration: none;
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    padding: 10px;
+    background-color: rgb(10, 1, 145);
+    color: white;
+    border: none;
+    border-radius: 28px;
+    cursor: pointer;
+    font-size: x-small;
+}
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -74,8 +85,10 @@ h1 span{
     box-shadow: 1px 3px 11px -5px rgb(0, 238, 255);
 }
 .download:hover{
+    color: white;
     background-color: rgb(84, 3, 233);
     box-shadow: 10px 13px 21px -5px rgb(84, 3, 233);
+    transition: 1s;
 }
 .main img{
     width: 350px;
@@ -122,6 +135,13 @@ h1 span{
 .about p{
     margin-bottom: 1em;
 }
+.portafolio,
+.contact{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(4, 1, 44);
+    color: white;
+}
 .portafolio-text{
     width: 100vw;
     display: flex;
@@ -145,6 +165,7 @@ h1 span{
     background-color: rgb(6, 1, 71);
     border-radius: 14px;
     padding: 2em;
+    margin: 5px;
 }
 .card:hover{
     height: 400px;
@@ -165,6 +186,7 @@ h1 span{
     justify-content: space-evenly;
 }
 .proyect-links button{
+    margin: 1%;
     padding: 10px 20px;
     background-color: rgb(0, 238, 255);
     border: none;
@@ -173,9 +195,9 @@ h1 span{
     font-weight: 900;
 }
 .proyect-links button:hover{
-    padding: 20px 30px;
+    padding: 15px 20px;
     cursor: pointer;
-    transition: ease-in 2ms;
+    transition: ease-in 5ms;
 }
 .contact-title{
     font-size: 2em;
@@ -200,5 +222,38 @@ h1 span{
     background-color: rgb(6, 1, 71);
     border-radius: 14px;
     width: 250px;
-
+}
+.footer{
+    padding: 3% 0 0 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    background-color: rgba(2, 157, 168, 0.747);
+}
+.footer h2{
+    font-size: 2.5em;
+}
+.footer h5{
+    font-size: 1em;
+}
+.social-net{
+    padding: 2%;
+    justify-content: space-evenly;
+    width: 300px;
+}
+.footer a{
+    padding: 3%;
+    background-color: rgb(84, 3, 233);
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    font-family: impact;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    border: solid 5px rgb(8, 0, 117);
 }

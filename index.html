@@ -10,22 +10,24 @@
 </head>
 <body>
 
-    <div class="wrapper">
+    <a href="#nav" class="back">volver a inicio</a>
+
+    <div class="wrapper" id="nav">
         <header>
             <nav class="navbar">
                 <div class="brand">
                     <h2>Y<span>J</span></h2>
                 </div>
                 <ul class="menu">
-                    <li><a href=""><b>Ho<span>me</span></b></a></li>
-                    <li><a href="">About_me</a></li>
-                    <li><a href="">Portafolio</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#home"><b>Ho<span>me</span></b></a></li>
+                    <li><a href="#about">About_me</a></li>
+                    <li><a href="#port">Portafolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-    <main class="main">
+    <main class="main" id="home">
         <div class="info-content">
         <h1>Ho<span>la </span>So<span>y </span>Yoi<span>mar </span>Ju<span>lio</span></h1>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut cumque asperiores maxime harum fuga doloribus dolor esse atque praesentium! Totam delectus nam, officiis commodi sequi aperiam voluptate nulla ad quas.</p>
@@ -39,7 +41,7 @@
 
     </div>
 
-    <div class="about">
+    <div class="about" id="about">
         <img src="./assets/images/img.jpg" alt="perfil-2">
 
         <div class="about-info">
@@ -50,7 +52,7 @@
         </div>
     </div>
 
-    <div class="portafolio">
+    <div class="portafolio" id="port">
         <div class="portafolio-text">
             <h2>Mi Portafolio</h2>
             <div class="divisor"></div>
@@ -89,9 +91,9 @@
         </div>
     </div>
 
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="contact-title">
-            <h2>Keep en touch</h2>
+            <h2>Keep in touch</h2>
             <div class="divisor"></div>
         </div>
 
@@ -112,6 +114,15 @@
 
     </div>
     
+    <footer class="footer">
+        <div class="footer-content">
+            <h2>Yoimar Julio</h2>
+            <h5>Desarrolador Frontend</h5>            
+        </div>
+        <div class="social-net">
+            <a href="https://github.com/ADRESS06">GitHub</a>
+        </div>
+    </footer>
 
 </body>
 </html>
