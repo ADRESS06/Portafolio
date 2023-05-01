@@ -277,6 +277,12 @@ h1 span{
 .footer a:hover{
     border: solid 5px rgb(8, 0, 117);
 }
+/*Efectos extras-agregados al final del proyecto*/
+body::-webkit-scrollbar-thumb{
+    background-color: aqua;
+    border-radius: 14px;
+    padding: 5px;
+}
 
 /*version movil*/
 
