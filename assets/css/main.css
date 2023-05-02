@@ -180,7 +180,7 @@ h1 span{
 }
 .card:hover{
     padding: 2.5em;
-    transition: ease-in 2s;
+    transition: ease-in 1s;
 }
 .card-img{
     width: 100%;
