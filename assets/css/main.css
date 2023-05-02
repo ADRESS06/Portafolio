@@ -179,7 +179,7 @@ h1 span{
     margin: -1% 0 10% 0;
 }
 .card:hover{
-    height: 400px;
+    padding: 5em;
     transition: ease-in 3s;
 }
 .card-img{
