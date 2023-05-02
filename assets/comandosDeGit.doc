@@ -1,3 +1,12 @@
+comandos de inicio
+
+git branch -m main "o nombre"
+git init
+git remote add origin git@github.com:ADRESS06/WebAnimation.git "o el link que te den"
+
+
+comandos de gestion
+
 git init
 git status
 git add .
