@@ -9,9 +9,20 @@ alert(`${creatorC} le sugiere visitar la pagina desde un Ordenador`)
 let menu = document.getElementById("menu");
 let mopen = document.getElementById("mopen");
 let mclose = document.getElementById("mclose");
+let downloadpdf = document.getElementById("downloadpdf")
 
 mopen.addEventListener("click", imenu);
 mclose.addEventListener("click", imenu);
+downloadpdf.addEventListener("click",imprimir);
+
+
+
+
+
+
+
+
+
 
 function imenu(){
     menu.classList.toggle("ver-menu");
@@ -24,4 +35,7 @@ function imenu(){
         mopen.style.display = "block";
         mclose.style.display = "none";
     }
+}
+function imprimir(){
+    print()
 }
