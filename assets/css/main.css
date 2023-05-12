@@ -14,12 +14,15 @@
     justify-content: center;
     align-items: center;
 }
-.anima img{
-    margin-top: -20vh;
-    width: 200px;
-    height:200px;
-    border-radius: 100%;
-    margin-bottom: 2%;
+.anima-img{
+margin-bottom: 5vh;
+}
+.anima-logo{
+    font-size: 10em;
+    font-weight: 800;
+}
+.anima-logo span{
+    color: rgb(0, 238, 255);
 }
 .divisorCBack{
     height: 7vh;
