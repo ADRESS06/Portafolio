@@ -126,9 +126,6 @@ h1{
 h1 span{
     color: rgb(0, 238, 255);
 }
-p{
-    padding: 10%;
-}
 .download{
     padding: 10px 20px;
     background-color: rgb(0, 238, 255);
@@ -345,10 +342,10 @@ body::-webkit-scrollbar-thumb{
 @media screen and (max-width: 800px){
     .divisorCBack{
         height: 7vh;
-        width: 80vw;
-        border: 5px solid black;
-        border-radius: 10vw;
-        margin-top: 2%;
+        width: 70vw;
+    }
+    p{
+        padding: 2% 10%;
     }
     .menu{
         flex-direction: column;
