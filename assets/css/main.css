@@ -35,7 +35,7 @@
     border: 5px solid black;
     border-radius: 10vw;
     background-color: aqua;
-    animation: crecimiento 10s;
+    animation: crecimiento 12s;
 }
 .all-content{
     display: none;
@@ -427,11 +427,11 @@ body::-webkit-scrollbar-thumb{
     10%{width: 10%; transition: ease-in-out 1s;}
     20%{width: 20%; transition: ease-in-out 1s;}
     30%{width: 30%; transition: ease-in-out 1s;}
-    40%{width: 40%; transition: ease-in-out 1s;}
+    40%{width: 40%; transition: ease-in-out 2s;}
     50%{width: 50%; transition: ease-in-out 1s;}
     60%{width: 60%; transition: ease-in-out 1s;}
     70%{width: 70%; transition: ease-in-out 1s;}
     80%{width: 80%; transition: ease-in-out 1s;}
     90%{width: 90%; transition: ease-in-out 1s;}
-    100%{width: 100%; transition: ease-in-out 3s;}
+    100%{width: 100%; transition: ease-in-out 5s;}
 }
