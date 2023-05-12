@@ -39,4 +39,4 @@ function imprimir(){
 setTimeout(() => {
     animaC.style.display = "none";
     aniIni.style.display = "block";
-  }, 12000);
+  }, 13000);

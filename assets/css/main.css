@@ -35,7 +35,7 @@
     border: 5px solid black;
     border-radius: 10vw;
     background-color: aqua;
-    animation: crecimiento 12s;
+    animation: crecimiento 13s;
 }
 .all-content{
     display: none;
