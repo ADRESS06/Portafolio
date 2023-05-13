@@ -11,6 +11,10 @@ let downloadpdf = document.getElementById("downloadpdf")
 let animaC = document.getElementById("animaC")
 let aniIni = document.getElementById("allContent")
 let upload = document.getElementById("upload")
+let loadbar = document.getElementById("divisorC")
+let randon = Math.round(Math.random() * 16)
+let time  = "crecimiento "+randon+"s"
+
 
 
 //menu de amburguesa
@@ -36,7 +40,11 @@ function imprimir(){
     print()
 }
 
+//pantalla de carga
 setTimeout(() => {
     animaC.style.display = "none";
     aniIni.style.display = "block";
-  }, 13000);
+  }, randon  * 1000);
+
+
+loadbar.style.animation = time
