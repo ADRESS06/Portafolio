@@ -340,14 +340,6 @@ body::-webkit-scrollbar-thumb{
 
 @media screen and (max-width: 800px){
 
-    .anima{
-        width: 100vw;
-        height: 90vh;
-    }
-    .all-content{
-        width: 100vw;
-        height: 90vh;
-    }
     .divisorCBack{
         height: 7vh;
         width: 70vw;
