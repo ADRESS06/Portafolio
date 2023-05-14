@@ -6,7 +6,7 @@
 }
 .anima{
     width: 100vw;
-    height:100vh ;
+    height:100vh;
     background-color: rgb(4, 1, 44);
     color: white;
     display: flex;
@@ -339,6 +339,15 @@ body::-webkit-scrollbar-thumb{
 /*version movil*/
 
 @media screen and (max-width: 800px){
+
+    .anima{
+        width: 100vw;
+        height: 90vh;
+    }
+    .all-content{
+        width: 100vw;
+        height: 90vh;
+    }
     .divisorCBack{
         height: 7vh;
         width: 70vw;
