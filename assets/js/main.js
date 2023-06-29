@@ -1,8 +1,7 @@
 //agradecimientos
 creator = "Yoimar Andres julio Salcedo"
 creatorC = "Yoimar"
-fotografa = "Sara Negrete"
-console.log(`Esta pagina fue creada por ${creator} con asistencia fotografica de ${fotografa}`);
+console.log(`Esta pagina fue creada por ${creator}`);
 //funcion del burger-menu
 let menu = document.getElementById("menu");
 let mopen = document.getElementById("mopen");

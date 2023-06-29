@@ -1,21 +1,33 @@
 /*Global*/
+/*colores immportante = background-image: linear-gradient( rgb(3, 154, 247),rgb(4, 1, 44)) */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+/*--Scroll-start--*/
+html{
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    background-color: rgb(144, 186, 228);
+    width: 8px;
+}
+::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(rgb(3, 154, 247),white,rgb(3, 154, 247));
+    border-radius: 56px;
+    margin: 2px;
+}
+/*--Scroll-end--*/
 .anima{
-    width: 100vw;
-    height:100vh;
-    background-color: rgb(4, 1, 44);
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient( rgb(3, 154, 247),rgb(4, 1, 44)) ;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.anima-img{
-margin-bottom: 5vh;
 }
 .anima-logo{
     font-size: 10em;
@@ -30,14 +42,13 @@ margin-bottom: 5vh;
     border: 5px solid black;
     border-radius: 10vw;
     margin-top: 2%;
-
 }
 .divisorC{
     height: 100%;
     width: 1%;
     border: 5px solid black;
     border-radius: 10vw;
-    background-color: aqua;
+    background-image: linear-gradient(to left, rgb(3, 154, 247),white,rgb(3, 154, 247));
 }
 .all-content{
     display: none;
@@ -46,9 +57,9 @@ body{
     font-family: Sans-serif, Georgia;
 }
 .wrapper{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
-    background-color: rgb(4, 1, 44);
+    background-image: linear-gradient( rgb(3, 154, 247),rgb(4, 1, 44)) ;
     color: white;
 }
 .navbar{
@@ -79,12 +90,11 @@ body{
     color: white;
     text-decoration: none;
     padding: 10px ;
+    border-radius: 28px;
 }
 .menu a:hover{
-    color: black;
-    border-radius: 7px;
-    background-color: rgb(84, 3, 233);
-    transition: ease-in 0.3s;
+    box-shadow: 0px 0px 12px 8px;
+    transition: ease-in 250ms;
 }
 .menu a span{
     color: rgb(0, 238, 255);
@@ -143,16 +153,23 @@ h1 span{
 .main img{
     width: 350px;
     height: 500px;
-    border: 7px solid rgb(8, 0, 117);  
-    z-index: 1;
+    border: 7px solid rgb(8, 0, 117);
+    border-radius: 14px;
+    transition: ease-in 500ms;
+}
+.main img:hover{
+    box-shadow: 0px 0px 12px 8px;
 }
 .perfil{
     margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .about{
     display: grid;
     grid-template-columns: repeat(10,1fr);
-    width: 100vw;
+    width: 100%;
     align-items: center;
 }
 .about img{
@@ -178,21 +195,19 @@ h1 span{
 .divisor:hover{
     height: 4px;
     width: 90%;
-    background-color: aqua;
+    background-image: linear-gradient(to left, rgb(3, 154, 247),white,rgb(3, 154, 247));
     transition: ease-in, 2s;
-
 }
 .about p{
     margin-bottom: 1em;
 }
-.portafolio,
-.contact{
-    width: 100vw;
-    background-color: rgb(4, 1, 44);
+.portafolio{
+    width: 100%;
+    background-image: linear-gradient( rgb(3, 154, 247),rgb(4, 1, 44)) ;
     color: white;
 }
 .portafolio-text{
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -217,34 +232,34 @@ h1 span{
     margin: -1% 0 10% 0;
 }
 .card:hover{
-    padding: 2.5em;
-    transition: ease-in 1s;
+    box-shadow: 0px 0px 12px 8px;
+    transition: ease-in 250ms;
 }
 .card-img{
     width: 100%;
     height: 150px;
-    background-image: url(../images/ADRESS.png);
+    background-image: url(/static/img/ADRESS.png);
     background-size: cover;
     background-position: center;
 }
 .card-img1{
     width: 100%;
     height: 150px;
-    background-image: url(../images/yycine.png);
+    background-image: url(/static/img/yycine.png);
     background-size: cover;
     background-position: center;
 }
 .card-img2{
     width: 100%;
     height: 150px;
-    background-image: url(../images/faviconWebanime.png);
+    background-image: url(/static/img/faviconWebanime.png);
     background-size: cover;
     background-position: center;
 }
 .card-img3{
     width: 100%;
     height: 150px;
-    background-image: url(../images/faviconJavaClass.png);
+    background-image: url(/static/img/faviconJavaClass.png);
     background-size: cover;
     background-position: center;
 }
@@ -260,14 +275,20 @@ h1 span{
     padding: 10px 20px;
     background-color: rgb(0, 238, 255);
     border: none;
-    border-radius: 56px;
-    box-shadow: 1px 3px 11px -5px rgb(0, 238, 255);
+    border-radius: 28px;
     font-weight: 900;
+    cursor: pointer;
 }
 .proyect-links button:hover{
-    padding: 15px 20px;
-    cursor: pointer;
-    transition: ease-in 5ms;
+    color: white;
+    background-color: rgb(84, 3, 233);
+    box-shadow: 10px 13px 21px -5px rgb(84, 3, 233);
+    transition: 250ms;
+}
+.contact{
+    width: 100%;
+    background-image: linear-gradient(rgb(4, 1, 44),rgb(3, 154, 247)) ;
+    color: white;
 }
 .contact-title{
     font-size: 2em;
@@ -284,7 +305,13 @@ h1 span{
     width: 350px;
     height: 500px;
     opacity: 35%;
-    border-radius: 100px;
+    border-radius: 100%;
+    margin-bottom: 2em;
+}
+.container-contact img:hover{
+    box-shadow: 0px 0px 12px 8px;
+    opacity: 100%;
+    transition: ease-in 250ms;
 }
 .contact-option{
     display: flex;
@@ -295,40 +322,31 @@ h1 span{
     border-radius: 14px;
     width: 250px;
 }
-.footer{
-    padding: 3% 0 0 0;
+footer{
+    width: 100%;
+    height: 12vh;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    width: 100vw;
-    background-color: rgba(2, 157, 168, 0.747);
+    background-image: linear-gradient(to left, rgb(4, 1, 44),rgb(3, 154, 247),rgb(4, 1, 44))
 }
-.footer h2{
-    font-size: 2.5em;
+.fo{
+    width: 12%;
 }
-.footer h5{
-    font-size: 1em;
-}
-.social-net{
-    padding: 2%;
+.fo a{
+    display: flex;
     justify-content: space-evenly;
-    width: 300px;
-}
-.footer a{
-    padding: 3%;
-    background-color: rgb(84, 3, 233);
-    border: none;
-    border-radius: 14px;
-    cursor: pointer;
-    font-family: impact;
-    font-size: 1em;
+    align-items: center;
+    color: white;
     text-decoration: none;
-    color: black;
 }
-.footer a:hover{
-    border: solid 5px rgb(8, 0, 117);
+.fo img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
 }
+
+
 /*Efectos extras-agregados al final del proyecto*/
 body::-webkit-scrollbar-thumb{
     background-color: aqua;
@@ -354,7 +372,7 @@ body::-webkit-scrollbar-thumb{
         top: 0;
         left: 0;
         height: 100vh;
-        background-color: rgb(6, 1, 71);
+        background-image: linear-gradient(to right, rgb(3, 154, 247),rgb(4, 1, 44)) ;
         z-index: 1;
         transform: translateX(-110%);
         transition: all 1s ease-in-out;
@@ -400,9 +418,6 @@ body::-webkit-scrollbar-thumb{
         padding: 2%;
         margin-bottom: 5%;
     }
-    .perfil{
-        margin-left: 24%;
-    }
     .desmo{
         display: block;
         margin-bottom: 2%;
@@ -422,7 +437,7 @@ body::-webkit-scrollbar-thumb{
         margin-right: 10%;
     }
     .contact-option{
-        width: 100vw;
+        width: 80%;
     }
     .social-net{
         margin-top: 20px;
