@@ -184,6 +184,9 @@ h1 span{
     font-size: 2em;
     color: rgb(4, 1, 44);
 }
+.about-info p{
+    font-size: 2em;
+}
 .divisor{
     height: 4px;
     width: 20%;
