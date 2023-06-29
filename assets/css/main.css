@@ -103,19 +103,6 @@ body{
 .burger-menu img{
     display: none;
 }
-.back{
-    text-decoration: none;
-    position: fixed;
-    bottom: 10px;
-    right: 20px;
-    padding: 10px;
-    background-color: rgb(10, 1, 145);
-    color: white;
-    border: none;
-    border-radius: 28px;
-    cursor: pointer;
-    font-size: x-small;
-}
 .main{
     margin: 0 auto;
     width: 80vw;
@@ -387,9 +374,6 @@ body::-webkit-scrollbar-thumb{
     }
     .menu li{
         margin: 1.5em;
-    }
-    .back{
-        display: none;
     }
     .burger-menu img{
         cursor: pointer;
