@@ -238,28 +238,28 @@ h1 span{
 .card-img{
     width: 100%;
     height: 150px;
-    background-image: url(/static/img/ADRESS.png);
+    background-image: url(../img/ADRESS.png);
     background-size: cover;
     background-position: center;
 }
 .card-img1{
     width: 100%;
     height: 150px;
-    background-image: url(/static/img/yycine.png);
+    background-image: url(../img/yycine.png);
     background-size: cover;
     background-position: center;
 }
 .card-img2{
     width: 100%;
     height: 150px;
-    background-image: url(/static/img/faviconWebanime.png);
+    background-image: url(../img/faviconWebanime.png);
     background-size: cover;
     background-position: center;
 }
 .card-img3{
     width: 100%;
     height: 150px;
-    background-image: url(/static/img/faviconJavaClass.png);
+    background-image: url(../img/faviconJavaClass.png);
     background-size: cover;
     background-position: center;
 }
